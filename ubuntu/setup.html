@@ -279,7 +279,7 @@
         </p>
         <pre class="article__code">sudo mkdir /media/cdrom</pre>
         <p>А теперь примонтируем:</p>
-        <pre class="article__code">sudo mkdir /media/cdrom</pre>
+        <pre class="article__code">sudo mount /dev/cdrom /media/cdrom</pre>
         <p>Как видите, нам и здесь понадобилось запустить команды с правами суперпользователя. А все потому, что мы
             решили создать новую папку в директории, которая принадлежит не нам. Ну и монтировать диски может только
             суперпользователь.
@@ -296,7 +296,7 @@
             чего подставится правильное имя архива.<br> Если вы все сделали правильно, то в вашей домашней директории
             должна появиться папка <b>vmware-tools-distrib</b>, можем даже изучить ее содержимое, для этого достаточно
             набрать</p>
-        <pre class="article__code">ln -s vmware-tools-distrib</pre>
+        <pre class="article__code">ls -la vmware-tools-distrib/</pre>
         <p>Про tab помните?
             <img src="images/42.png" alt="" class="article__image">
         </p>
@@ -361,7 +361,7 @@
         <pre class="article__code">mount -rw -o remount /</pre>
         <p>А теперь поменяем пароль:</p>
         <pre class="article__code">passwd ubuntu</pre>
-        <p>Где вместо <b>ubuntu</b> вы вводите свой логин. Будет предложено дваджы ввести новый пароль, а затем можно
+        <p>Где вместо <b>ubuntu</b> вы вводите свой логин. Будет предложено дважды ввести новый пароль, а затем можно
             перезагрузиться и войти как обычно, под своим пользователем.
             <img src="images/51.png" alt="" class="article__image">
         </p>
